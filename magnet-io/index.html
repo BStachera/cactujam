@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="images/magnet/2.gif">
+    <link rel="icon" href="images/magnet/2.png">
     <title>Magnet.io</title>
     <meta description="Zagraj w Magnetion i pomóż magnesiowi się naładować">
     <link rel="stylesheet" type="text/css" href="style/style.css">
@@ -18,7 +18,7 @@
                     <span> MAGNET.IO </span>
                 </li>
                 <li>
-                    <span > INFO </span>
+                    <a href="help.html"><span > INFO </span></a>
                 </li>
             </ul>
         </header>
@@ -30,12 +30,13 @@
                     <span id="chat" ></span>
                     <img src="images/pyt.png" class="dymek">
                     <ul style="width: 60px; position: relative; float: right; top: 22px">
-                        <li><img src="images/plus.png" onclick="chatinfo(1)"></li>
-                        <li><img src="images/minus.png" onclick="chatinfo(0)"></li>
+                        <li><img src="images/plus.png" onclick="chatinfo(1)" style="visibility: visible" id="checkerp" class="btn"></li>
+                        <li><img src="images/minus.png" onclick="chatinfo(0)" style="visibility: visible" id="checkerm" class="btn"></li>
                     </ul>
                 </li>
             </ul>
         </main>
+        <script type="text/javascript" src="scripts/chat.js"></script>  
         <article>
             <ul class="item">
                 <script>table_create()</script>           
@@ -44,10 +45,10 @@
         <footer>
             <div>
             <img src="images/power.png">
-            <span id="energy_cnt">10</span>
+            <span id="energy_cnt">0</span>
             </div>
         </footer>
     </div>
-    <script type="text/javascript" src="scripts/chat.js"></script>   
+    <!--<script type="text/javascript" src="scripts/chat.js"></script>  --> 
 </body>
 </html>
