@@ -1,5 +1,6 @@
 function chatinfo(x){
     if( x == 1){
+        speaknow("Happiness")
         document.getElementById('chat').innerHTML = chat_message[1];
         document.getElementById('magnetio').src="images/magnet/2.png";
         energy += 10;
@@ -8,6 +9,7 @@ function chatinfo(x){
         document.getElementById('checkerm').style.visibility = "hidden";
 
     } else if( x == 0){
+        speaknow("Get the fuck out ")
         document.getElementById('chat').innerHTML = chat_message[2];
         document.getElementById('magnetio').src="images/magnet/0.png";      
         document.getElementsByClassName('btn')[0].style.visibility = "hidden";

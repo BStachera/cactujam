@@ -17,7 +17,13 @@ let item_cnt = [0,0,0,0,0,0,0,0,0];
 let item_add = [1,10,50,100,500,1000,5000,100000,500000];
 let item_act = [0,0,0,0,0,0,0,0,0];
 let item_prc = [10,100,10000,100000,1000000,10000000,100000000,1000000000,10000000000];
-let nazwy =["CACTU NEWS","SKARYPETA","WLOSY EMOO","SKORA ZEBERA", "PRADNICA RECZNA","BAERIA AAA+","ELEKTROWNIA JADROWA","CACTU GENERATOR","ENERGIA BOSKIEGO CACTU"]
+let nazwy =["CACTU NEWS","CACTUSOCK","EMO HAIR","ZEBER FUR/SHIN", "HAND MACHINE","AAA+ BATTERY","NUCLEAR ENERGY ","CACTU GENERATOR","CACTU GOD BLESSING "]
+let synth = window.speechSynthesis;
+function speaknow(a){
+    let x = new SpeechSynthesisUtterance(a);
+        x.lang = 'en-EN';
+        synth.speak(x);
+}
 function magclick(){
     console.log("click");
     let energy_clk = ((item_add[0]*item_cnt[0])+(item_add[1]*item_cnt[1])+(item_add[2]*item_cnt[2])+(item_add[3]*item_cnt[3])+(item_add[4]*item_cnt[4])+(item_add[5]*item_cnt[5])+(item_add[6]*item_cnt[6])+(item_add[7]*item_cnt[7])+(item_add[8]*item_cnt[8]));
@@ -37,45 +43,48 @@ function buy(x){
 
         if(item_cnt[0] == 1){
             document.getElementById('chat').innerHTML = chat_message[3];
-            document.getElementsByClassName("btn")[0].id = "plus";
-            document.getElementsByClassName("btn")[1].id = "minus";
-            document.getElementsByClassName('btn')[0].style.visibility = "hidden";
-            document.getElementsByClassName('btn')[1].style.visibility = "hidden";
-            document.getElementsByClassName('btn')[0].onclick = "glosowanie_one(1)";
-            document.getElementsByClassName('btn')[1].onclick = "glosowanie_one(0)";
+            speaknow("achievement: Cactus News fresh news");
         }
         if(item_cnt[1] == 1){
             document.getElementById('chat').innerHTML = chat_message[4];
+            speaknow("achievement: Fresh sock");
         }
         if(item_cnt[2] == 1){
             document.getElementById('chat').innerHTML = chat_message[5];
+            speaknow("achievement: fresh hair with a lot of metal");
         }
         if(item_cnt[3] == 1){
             document.getElementById('chat').innerHTML = chat_message[6];
+            speaknow("achievement: Zebra skin, Zeber, ouu ");
         }
         if(item_cnt[4] == 1){
             document.getElementById('chat').innerHTML = chat_message[7];
+            speaknow("achievement: Let's masturbate hyhy");
         }
         if(item_cnt[5] == 1){
             document.getElementById('chat').innerHTML = chat_message[8];
+            speaknow("achievement: battery life, charge me up");
         }
         if(item_cnt[6] == 1){
             document.getElementById('chat').innerHTML = chat_message[9];
+            speaknow("achievement: This is soo dangerous");
         }
         if(item_cnt[7] == 1){
             document.getElementById('chat').innerHTML = chat_message[10];
+            speaknow("achievement: power from cactus");
         }
         if(item_cnt[8] == 1){
             document.getElementById('chat').innerHTML = chat_message[11];
+            speaknow("achievement: Heil Cactus, Heil Cactus, God bless you");
         }
 
     }else{
-        console.log("bieda");
+        speaknow("Low energy")
     }
 }
 function table_create(){
     for( let x=1; x<= 9; x++){
-        document.write("<li class='items'> <ul class='itembar'><li> <img src='images/item/"+x+".gif'></li><li> <span class='buy' onclick='buy("+(x-1)+")'>BUY</span></li><li> <span class='count'>COUNT:"+item_cnt[x-1]+" </span></li><li> <span>"+nazwy[x-1]+"</span></li><li> <span id='price'>"+item_prc[x-1]+"<img class='powerprice' src='images/power.png'></span></li></ul></li>")
+        document.write("<li class='items'> <ul class='itembar'><li> <img src='images/item/"+x+".png'></li><li> <span class='buy' onclick='buy("+(x-1)+")'>BUY</span></li><li> <span class='count'>COUNT:"+item_cnt[x-1]+" </span></li><li> <span>"+nazwy[x-1]+"</span></li><li> <span id='price'>"+item_prc[x-1]+"<img class='powerprice' src='images/power.png'></span></li></ul></li>")
     }
     document.getElementById('chat').innerHTML = chat_message[0];
 }

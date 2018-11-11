@@ -155,9 +155,9 @@ article ul.item li.items{
 article ul.itembar{
 	position: relative;
 	top: 0px;
-	height: 40px;
+	height: 45px;
 	list-style-type: none;
-	margin: 5px;
+	margin: 0px;
 	padding: 0;
 	overflow: hidden;
 }
@@ -174,7 +174,7 @@ span.buy{
 	font-size: 20px;
 	width: 58px;
 	height: 39px;
-	background-color: #338133;
+	background-color: #7de67d;
 }
 footer{
 	position: relative;
