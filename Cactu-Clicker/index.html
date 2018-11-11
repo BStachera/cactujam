@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="grafika/Baner.png">
+    <title>Cactu-Evolv</title>
+    <meta description="Gra Cactu-Evolv zagraj już teraz">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+    <div class="playground">
+        <header>
+            <ul class="infobar">
+                <li>
+                    <img src="grafika/poziom.png">
+                    <span id="lvl">1</span>
+                </li>
+                <li>
+                    <img src="grafika/money.png">
+                    <span id="money">0</span>
+                </li>
+            </ul>
+            <div id="progress">
+                <div style="width: 0%" id="xp"></div>
+                <p id="text_xp">0 of 100xp</p>
+            </div>
+        </header>
+        <main>
+            <div class="kaktus" id="cactu">       
+            <img src="grafika/kaktusy/lv1.png" onclick="starte()" id="zmiana_kaktusa">
+            <script type="text/javascript" src="scripts/script.js"></script>   
+            </div>
+        </main>
+        <footer>         
+            <ul class="itemshop">
+                <li class="item">
+                    <span id="ilosc_wiadro">0</span>
+                </li>
+                <li class="item" id="wiadro" onclick="zakup(1)">
+                    <img src="grafika/wiadro.png">
+                </li>
+                <li class="item" id="rekawica" onclick="zakup(2)">
+                    <img src="grafika/rekawica.png" >
+                </li>
+                <li class="item">
+                    <span  id="ilosc_rekawica">0</span>
+                </li>
+            </ul>
+            <ul class="itemshop">
+                <li class="cena">
+                    <span class="kwota">10</span>
+                    <img id="kasa" src="grafika/money.png">
+                </li>
+                <li class="cena">
+                    <span class="kwota">15</span>
+                    <img id="kasa" src="grafika/money.png">
+                </li>   
+            </ul>
+           
+        </footer>
+    </div>
+    <aside>
+        <img src="grafika/Baner.png">     
+        <div>
+            1. Bij Kaktusa żeby zdobyć Cactu-Coina. <br>
+            2. Zdobywaj poziomy i pochwal się znajomym. <br>
+            3. Za zdobyte pieniądze kupuj ulepszenia. <br>
+            4. Co dają Ulepszenia:<br>
+            &nbsp;&nbsp;- Wiadro : Przyspiesza zdobywanie XP!<br>
+            &nbsp;&nbsp;- Rękawica : Zwiększa przychód pieniędzy!<br>
+            5. Baw się dobrze i zdobądź legendarnego <br><span style="color: gold"><center>ZŁOTEGO KAKTUSA <br> z <br>TĘCZOWYM KWIATEM PRESTIŻU!!!<br></center></span>
+        <br>@Stasiełek Specjalnie dla #Kaktusa na #cactujam2k18. Pozdrawiam Mateusza P.
+        </div>
+
+    </aside>
+    <audio autoplay loop>
+        <source src="sound/sound1.mp3" type="audio/mp3"/>
+        <source src="sound/sound1.ogg" type="audio/ogg">
+    </audio>
+</body>
+</html>
