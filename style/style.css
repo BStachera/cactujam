@@ -1,0 +1,187 @@
+@font-face{
+font-family: pixeled;
+src:url(../font/Pixeled.ttf);
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+body{
+    background-color: #e4e4e9;
+    overflow-y: hidden;
+	font-family: pixeled;
+}
+div.playground{
+	position: relative;
+	top: 20px;
+	left: 37px;
+	width: 850px;
+	height: 900px;
+	background-color: #ffffff;
+	float: left;
+}
+div header{
+	width: 100%;
+	height: 40px;
+	font-size: 20px;
+	background-color: #e4e4e9;
+}
+header ul.infobar {
+	position: relative;
+	height: 40px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+header ul.infobar li > img{
+	position: relative;
+}
+header ul.infobar li > span{
+	position: relative;
+	margin-left: 5px;
+	font-size: 20px;
+	color: #202020;
+}
+header ul.infobar li:first-child {
+	position: relative;
+	float: left;
+	left: 24px;
+}
+header ul.infobar li:nth-child(2){
+	position: relative;
+	float: right;
+	right: 35px;
+	height: 35px;
+	background-color: #bdbdbd;	
+}
+main{
+	height:240px;
+	background-color: white;
+	border-bottom: 3px #8e8e93 solid;
+}
+main ul.magnebar{
+	position: relative;
+	height: 220px;
+	list-style-type: none;
+	margin: 20px;
+	padding: 0;
+	overflow: hidden;
+}
+main ul.magnebar li.clickmag{
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 200px;
+	background-image: url(../images/stuk.gif) ;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	transition: all 0.1s;
+}
+main ul.magnebar li.clickmag:hover{
+	transform: rotate(-6deg);
+}
+main ul.magnebar li.clickmag:active{
+	transform:skewY(20deg);
+}
+main ul.magnebar li:nth-child(2){
+	position: relative;
+	float: right;
+	height: 210px;
+}
+main ul.magnebar li:nth-child(2) img:nth-child(2){
+	position: relative;
+	height: 145px;
+	width: 160px;	
+}
+main ul.magnebar li span{
+	max-width: 194px;
+	line-height: 14px;
+	font-size: 10px;
+	position: absolute;
+	top: 28px;
+	left: 194px;
+	z-index: 1;
+}
+main ul.magnebar li img.dymek{
+	position: relative;
+	top: -40px;
+	z-index: 0;
+}
+article{
+	height: 530px;
+	background-color: #c6c6cb;
+}
+article ul.item{
+	position: absolute;
+	width: 830px;
+}
+article ul.item li.items{
+	position: relative;
+	margin: 5px;
+	padding: 4px;
+	width: 820px;
+	height: 45px;
+	background-color: white;
+}
+article ul.itembar{
+	position: relative;
+	top: 0px;
+	height: 45px;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0;
+	overflow: hidden;
+}
+article ul.itembar li{
+	margin-right: 15px;
+	position: relative;
+	float: left;
+}
+article ul.itembar li img{
+	height: 45px;
+	width: 45px;
+}
+span.buy{
+	font-size: 20px;
+	width: 58px;
+	height: 39px;
+	background-color: #7de67d;
+}
+footer{
+	position: relative;
+	height: 67px;
+	background-color: #c6c6cb;
+}
+article ul.itembar li img.powerprice{
+	height: 25px;
+	width: 25px;
+}
