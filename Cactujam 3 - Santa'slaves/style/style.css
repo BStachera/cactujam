@@ -1,0 +1,361 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    body{
+        background-color: #000000;
+        overflow-x: hidden;
+        color: white;
+        font-family: 'Signika Negative', sans-serif;
+    }
+    div#playsite{
+        position: absolute;
+        left: calc(50vw - 400px);
+        width: 700px;
+        height: 900px;
+        background-color: #1d1d1d
+    }
+    header{
+        width: 100%;
+        height: 35px;
+        background-color: #3f3f3f;
+        align-content: center;
+        text-align: center;
+    }
+    header ul.menu{
+        left: 25px;
+        width: 650px;
+        text-align: center;
+        position: relative;
+        top: 0px;
+        height: 45px;
+        list-style-type: none;
+        margin: 0px;
+        padding: 4px;
+        overflow: hidden;
+        font-size: 26px;
+    }
+    header ul.menu li{
+        margin-right: 160px;
+        position: relative;
+        float: left;
+    }
+    header ul.menu li:nth-child(3){
+        margin-right: 5px;
+        position: relative;
+        float: left;
+    }
+    header ul.menu li:nth-child(2){
+        margin-top: -5px;     
+    }
+    article.gamecenter{
+        position: relative;
+    }
+    #sheet{
+        margin-top: 15px;
+        margin-left: 2.5%;
+        position: relative;
+        width: 95%;
+        background-color: #3f3f3f;
+    }
+    .storybox{
+        height: 280px;
+    }
+    div.storybox ul{
+        width: 666px;
+        position: relative;
+        top: 0px;
+        height: 280px;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+    div.storybox ul li{
+        margin-right: 3px;
+        position: relative;
+        float: left;
+    }
+    div.storybox ul li:first-child{
+        width: 270px;
+        margin-right: 3px;
+        position: relative;
+        float: left;
+    }
+    div.storybox ul li img.cave{
+        position: relative;
+        height: 280px;
+        z-index: 4;
+    }
+    div.storybox ul li img.mikol{
+        position: absolute;
+        height: 220px;
+        top: 50px;
+        left: 17px;
+        z-index: 3;
+    }
+    div.storybox ul li img.czat{
+        position: relative;
+        top: 0px;
+        width: 385px;
+        height: 280px;
+        z-index: 2;
+    }
+    div.storybox ul li span.storytell{
+        color: black;
+        z-index: 3;
+        position: absolute;
+        max-width: 343px;
+        max-height: 264px;
+        left: 32px;
+        top: 17px;
+        font-size: 18px;
+    }
+    
+    .stats{
+        height: 140px;
+        padding-top: 5px;
+        padding-bottom: 5px; 
+        margin-left: 15px;
+
+    }
+    div.stats ul.bars{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            position: relative;
+            width: 450px;
+            padding: 0;
+            right: 0px;
+            top: 0px;
+            left: 4px;
+            list-style-type: none;
+            overflow: hidden;
+            font-size: 20px;
+        }
+        div.stats ul li{
+        margin-top: 14px;
+        }
+        .progress{
+            position: relative;
+            left: 0px;
+            width: 350px;
+            height: 18px; 
+            background-color: #ffffff;
+            float: right;
+        }
+        .progress > div{
+            position: absolute;
+            top: 0px;
+            height: 100%;
+            background-color: #34ca00;	
+        }
+        ul.statysti{
+            float: left;
+            position: relative;
+            top: -5px;
+            width: 666px;
+            height: 150px;
+        }
+        ul.infostat{
+            text-align: left;
+            position: absolute;
+            top: 4px;
+            left: 480px;
+            width: 180px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding: 0;
+            list-style-type: none;
+            overflow: hidden;
+            font-size: 20px;
+        }
+        div.stats ul.infostat li{
+            margin-top: 14px;
+            }
+    .game{
+        height: 350px;
+    }
+    table{
+        position: absolute;
+        width: 655px;
+        height: 340px;
+        margin-left: 6px;
+        margin-top: 6px;
+    }
+    table tr td.alko, table tr td.sweets{
+        width: 200px;
+        margin-right: 10px;
+    }
+    div.elficzkikup ul{
+        position:relative;
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        width: 330px;
+        height: 80px;
+    }
+    div.elficzkikup ul:nth-child(3){
+        position:relative;
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        font-size: 20px;
+        text-align: left;
+        width: 330px;
+        top: -6px;
+    }
+    div.elficzkikup ul li.imag{
+        position: relative;
+        left: 0px;
+        top: 0px;
+        float:left;
+        margin: 13px;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border: solid #000000 2px;
+        transition: 0.1s all;
+    }
+    div.elficzkikup ul li.elpric{
+        position: relative;
+        text-align: center;
+        color: black;
+        left: 0px;
+        top: 0px;
+        float:left;
+        margin-left: 13px;
+        margin-right: 13px;
+        width: 50px;
+        height: 20px;
+        font-size: 20px;
+        background-color: white;
+        border: solid #000000 2px;
+        transition: 0.1s all;
+    }
+    div.elficzkikup ul li.imag:hover{
+        left: -1px;
+        top: -1px;
+        width: 52px;
+        height: 52px;
+        background-color: #cc81b9;
+    }
+    div.elficzkikup ul li.imag:active{
+        background-color: #e0dd31;
+        width: 49px;
+        height: 49px;
+    }
+    div.elficzkisend{
+        font-size: 40px;
+        text-align: center;
+        color: rgb(112, 40, 40);
+        position: relative;
+        width: 200px;
+        height: 45px;
+        background-color: white;
+        margin: 5px;
+        transition: 0.1s color, 0.2s background, 0.09s all;
+        border: solid #000000 2px;
+    }
+    div.elficzkisend:hover{
+        color: rgb(255, 255, 255);
+        background-color: rgb(112, 40, 40);
+    }div.elficzkisend:active{
+        height: 43px;
+        width: 198px;
+        background-color: rgb(112, 40, 80);
+    }
+    div.santaupgrade{
+        font-size: 40px;
+        text-align: center;
+        color: rgb(241, 239, 115);
+        position: relative;
+        width: 300px;
+        height: 60px;
+        background-color: white;
+        margin: 5px;
+        transition: 0.1s color, 0.2s background, 0.09s all;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #000000;
+        border: solid #000000 2px;
+    }
+    div.santaupgrade:hover{
+        width: 301px;
+        height: 61px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(119, 241, 115);
+    }div.santaupgrade:active{
+        width: 298px;
+        height: 58px;
+        background-color:rgb(188, 214, 75);
+    }
+    ul.przedmioty{
+        position: relative;
+        list-style-type: none;
+        width: 160px;
+        height: 300px;
+    }ul.przedmioty li{
+        text-align: center;
+        color: black;
+        font-family: 'Signika Negative', sans-serif;
+        margin: 13px;
+        width: 110px;
+        height: 36px;
+        background-color: white;
+        border: solid black 2px;
+        transition: 0.1s all;
+    } ul.przedmioty li:hover{
+        width: 112px;
+        height: 38px;
+        background-color: rgb(136, 226, 148);
+    } ul.przedmioty li:active{
+        width: 110px;
+        height: 34px;
+        background-color: rgb(102, 226, 31);
+    }
+    

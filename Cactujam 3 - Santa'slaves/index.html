@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/ico.png">
+    <title>Santa'slaves</title>
+    <meta description="Pomóż elfom ogarnąć mikołaja">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Signika+Negative" rel="stylesheet">
+</head>
+<body>
+        <script type="text/javascript" src="scripts/script.js"></script> 
+<div id="playsite">
+    <header>
+        <ul class="menu">
+            <li> <a href="index.html">Restart</a></li>
+            <li> <img src="images/logo.png"></li>
+            <li> <a href="help.html">Help</a></li>
+        </ul>
+    </header>
+    <article class="gamecenter">
+        <div id="sheet" class="storybox">
+            <ul>
+                <li>
+                   <img src="images/bckg/cave.png" class="cave"> 
+                   <img src="images/Santa/1.png" class="mikol" id="mikol"> 
+                </li>
+                <li>
+                    <span class="storytell" id="czatstart" onclick="startgame()"> Witaj w grze Santa Slave(s), kliknij przycisk, żeby rozpocząć historię, włącz głośniki, ponieważ gra zawiera efekty dźwiękowe. Informacje na temat przedmiotów i jak grać znajdziesz w zakładce |Help|. Gra jest dość krótka więc jak coś się stanie to zawsze możesz zrestartować :D Click to play</span>
+                    <img src="images/bckg/czat.png" class="czat"> 
+                </li>
+            </ul>
+        </div>
+        <div id="sheet" class="stats">
+            <ul class="bars">
+                    <li>Głód: 
+                        <div class="progress">
+                            <div style="width: 0%;background-color: #e5a92a;" id="hunger"></div>
+                        </div>
+                    </li>
+                    <li>Pijaństwo:
+                        <div class="progress">
+                            <div style="width: 0%;background-color: #ca4fe0;" id="drunk"></div>
+                        </div>
+                    </li>
+                    <li>Szczęście:
+                        <div class="progress">
+                            <div style="width: 0%;background-color: #27de38;" id="happi"></div>
+                        </div>
+                    </li>
+                    <li>Senność:
+                        <div class="progress">
+                            <div style="width: 0%;background-color: #559fde;" id="sleep"></div>
+                        </div>
+                    </li>
+            </ul>       
+            <ul class="infostat">
+                <li>Kasa:&nbsp;<span id="money">20</span>$</li>
+                <li>Poziom:&nbsp;<span id="lvl">0</span></li>
+                <li>$perSend:&nbsp;<span id="mps">0</span></li>
+                <li>Humor:&nbsp;<span id="mood">Angry</span></li>
+            </ul>                      
+        </div>
+        <div id="sheet" class="game">
+            <table>
+                <tr>
+                    <td class="alko">
+                        <span> Alkohol </span>
+                        <ul class="przedmioty">
+                            <li onclick="alkbuy(0)">Żuberek 25$ (5%/500ml)</li>
+                            <li onclick="alkbuy(1)">Małpeczka 40$ (40%/100ml)</li>
+                            <li onclick="alkbuy(2)">Połóweczka 80$ (40%/500ml)</li>
+                            <li onclick="alkbuy(3)">Łyskacz 500$ (38%/1L)</li>
+                            <li onclick="alkbuy(4)">Absynth 1000$ (80%/750ml)</li>
+                        </ul>
+                    </td>
+                    <td class="sweets">
+                        <span> Jedzonko </span>
+                        <ul class="przedmioty">
+                                <li onclick="swebuy(0)">Herbatnik 10$ </li>
+                                <li onclick="swebuy(1)">Czekolada 50$ </li>
+                                <li onclick="swebuy(2)">Sernik 150$ </li>
+                                <li onclick="swebuy(3)">Makowiec 500$ </li>                            
+                            </ul>
+                    </td>
+                    <td class="upgrades">
+                        <span> Elficzki: </span>
+                        <div class="elficzkikup">
+                                <ul style="height: 25px">
+                                        <li class="elpric" id="cnt">0</li>
+                                        <li class="elpric" id="cnt">0</li>
+                                        <li class="elpric" id="cnt">0</li>
+                                </ul>
+                            <ul>
+                                <li class="imag" onclick="elfbuy(0)"><img src="images/elficzki/1.png"></li>
+                                <li class="imag" onclick="elfbuy(1)"><img src="images/elficzki/2.png"></li>
+                                <li class="imag" onclick="elfbuy(2)"><img src="images/elficzki/3.png"></li>
+                            </ul>
+                            <ul style="height: 25px">
+                                    <li class="elpric" id="hookers_money">10$</li>
+                                    <li class="elpric" id="hookers_money">100$</li>
+                                    <li class="elpric" id="hookers_money">1000$</li>
+                            </ul>
+                        </div><br>
+                        <span> Wyślij elficzki na miasto </span>
+                        <div class="elficzkisend" onclick="send()"> SEND </div><br>
+                        <span> Upgrade Santa </span><br>
+                        <div class="santaupgrade" onclick="upgradesanta()"> Upgrade: 500$</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </article>
+    <footer style="text-align: center; margin-top: 5px;">
+        Game deigned and made by Staś specially for Cactujam 3, topic : caverns
+    </footer>
+</div> 
+</body>
+</html>  
