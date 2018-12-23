@@ -240,7 +240,7 @@ function send(){
 function upgradesanta(){
 
   if(money >= santapricing[lvl]){
-    if(hunger == 100 && drunk == 100 && happiness == 100 && sleep == 100){
+    if(hunger >= 100 && drunk >= 100 && happiness >= 100 && sleep >= 100){
       money -= santapricing[lvl];
       document.getElementById("money").innerHTML = money;
       lvl += 1;
