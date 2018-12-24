@@ -357,4 +357,8 @@ table {
         height: 34px;
         background-color: rgb(102, 226, 31);
     }
-    
+    @media all and (max-width: 820px) {
+        div#playsite{
+            left: 20px;
+        }
+    }
